@@ -1,0 +1,132 @@
+/*.dashboard-overview {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.metrics {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.metric-card {
+    background-color: #e0e0e0;
+    padding: 30px;
+    border-radius: 10px;
+    width: 20%;
+    text-align: center;
+    font-weight: bold;
+}*/
+/* Existing CSS */
+.dashboard-overview {
+    background-color: #f7f9fc;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 200px;
+    margin-top: 20px;
+  }
+  
+  .metric-card {
+    background-color: #ffffff;
+    padding: 25px 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .metric-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .metric-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #555;
+  }
+  
+  .metric-value {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #007bff;
+    transition: color 0.3s ease;
+  }
+  
+  /* Enhanced Styling for System Status */
+  .metric-card.system-status {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .metric-value.status {
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, box-shadow 0.3s, color 0.3s;
+  }
+  
+  .metric-value.status.all-systems-operational {
+    background: linear-gradient(135deg, #28a745, #44d77f); /* Green Gradient */
+    color: white;
+    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.4);
+  }
+  
+  .metric-value.status.maintenance-required {
+    background: linear-gradient(135deg, #ffc107, #ffdc60); /* Yellow Gradient */
+    color: black;
+    box-shadow: 0 4px 8px rgba(255, 193, 7, 0.4);
+  }
+  
+  .metric-value.status.system-overload {
+    background: linear-gradient(135deg, #dc3545, #ff5c66); /* Red Gradient */
+    color: white;
+    box-shadow: 0 4px 8px rgba(220, 53, 69, 0.4);
+  }
+  
+  .metric-value.status.network-issues-detected {
+    background: linear-gradient(135deg, #17a2b8, #51d1e0); /* Blue Gradient */
+    color: white;
+    box-shadow: 0 4px 8px rgba(23, 162, 184, 0.4);
+  }
+  
+  .place-order-button {
+    display: block;
+    margin: 20px auto;
+    padding: 15px 30px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .place-order-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+  

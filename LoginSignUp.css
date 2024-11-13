@@ -1,0 +1,242 @@
+/*.con {
+    background-image: url("https://djcs-prod.s3.amazonaws.com/public/blogs/deloitte/blogs.dir/9/files/2022/04/Retial-This-Metric-Can-Bost-Inventory-ROI-IMAGE.jpg");
+    background-size: cover; 
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    padding: 20px; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%; 
+    max-width: 600px; 
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.text {
+    color: #3c009d;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.underline {
+    width: 61px;
+    height: 6px;
+    background: #3c009d;
+}
+
+.inputs {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 100%; 
+    max-width: 480px;
+    height: 70px;
+    background: rgb(218, 216, 216);
+    border-radius: 10px; 
+}
+
+.input img {
+    margin: 0 20px;
+}
+
+.input input {
+    height: 40px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #797979;
+    font-size: 16px;
+}
+
+.forgot-password {
+    padding-left: 10%;
+    margin-top: 20px;
+    color: #797979;
+    font-size: 16px;
+}
+
+.forgot-password span {
+    color: #4c00b4;
+    cursor: pointer;
+}
+
+.submit-container {
+    display: flex;
+    gap: 20px; 
+    margin: 40px auto;
+}
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px; 
+    height: 50px;
+    color: #fff;
+    background: #4c00b4;
+    border-radius:10px;
+}
+.submit.gray{
+    background-color: gray;
+}
+.hlo{
+    width:80px;
+    height:50px;
+    margin-left:270px;
+    border-radius: 10px;
+   
+}*/
+.con {
+    background-image: url("https://djcs-prod.s3.amazonaws.com/public/blogs/deloitte/blogs.dir/9/files/2022/04/Retial-This-Metric-Can-Bost-Inventory-ROI-IMAGE.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+.con::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px); /* Main blur effect for the background */
+    z-index: 1;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px; /* Increased width */
+    padding: 40px; /* Spacious padding */
+    background: rgba(255, 255, 255, 0.1); /* Light transparent white for glass effect */
+    backdrop-filter: blur(15px); /* Blur effect for the container */
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37); /* Softer, deeper shadow for glass look */
+    position: relative;
+    z-index: 2;
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Light border for glass feel */
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    margin: 15px 0; /* Increased spacing between inputs */
+    background: rgba(255, 255, 255, 0.2); /* Transparent background for inputs */
+    backdrop-filter: blur(12px); /* Subtle blur effect on inputs */
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border to enhance glass effect */
+}
+
+.input img {
+    margin-right: 15px;
+}
+
+.input input {
+    width: 100%;
+    padding: 12px;
+    background: transparent; /* Transparent to retain glass effect */
+    border: none; /* Remove default border */
+    outline: none; /* Remove outline on focus */
+    color: #fff; /* White text color for readability */
+}
+
+.input input::placeholder {
+    color: #eee; /* Placeholder color */
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px; /* Increased margin for spacing */
+}
+
+.underline {
+    width: 60px;
+    height: 4px;
+    background-color: #555;
+    margin: 0 auto;
+}
+
+.forgot-password {
+    text-align: right;
+    margin: 10px 0;
+    color: #bbb; /* Lighter color for text */
+}
+
+.submit-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.submit {
+    width: 45%; /* Adjusted width to take 45% of the parent container each */
+    padding: 12px;
+    text-align: center;
+    margin: 0 8px;
+    background: rgba(0, 123, 255, 0.7);
+    backdrop-filter: blur(5px);
+    color: white;
+    border-radius: 12px; /* Increased border-radius for a more rounded look */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s; /* Optional: a smooth hover effect */
+}
+
+.submit.gray {
+    background-color: rgba(200, 200, 200, 0.4);
+    cursor: default;
+}
+
+.submit:hover:not(.gray) {
+    transform: scale(1.05); /* Slight scale-up on hover for better interactivity */
+}
+
+.hlo {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 25px;
+    background: rgba(40, 167, 69, 0.7);
+    backdrop-filter: blur(5px);
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 12px; /* Increased border-radius */
+    cursor: pointer;
+}
+
+.hlo:hover {
+    background-color: #218838;
+}

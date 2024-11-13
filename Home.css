@@ -1,0 +1,93 @@
+/*.home {
+    font-size: large;
+    background-image: url("https://www.skunexus.com/hubfs/SkuNexus%20is%20the%20best%20web-based%20inventory%20management%20software.webp");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    display: flex;
+}
+
+.hh {
+    padding-top: 100px; 
+    margin-top: 90px; 
+    padding-left: 50px;
+    color:white; 
+}
+
+.h1 {
+    font-size: 800px;
+    justify-content: center;
+    
+}
+
+.p {
+    font-size: large;
+}
+.but{
+    width:80px;
+    height:50px;
+    border-radius:8px;
+}*/
+.home {
+    font-size: large;
+    background-image: url("https://www.skunexus.com/hubfs/SkuNexus%20is%20the%20best%20web-based%20inventory%20management%20software.webp");
+    background-size: cover; /* Ensures the background image covers the entire container */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    height: 100vh; /* Makes the container full height of the viewport */
+    display: flex;
+    justify-content: center; /* Centers the container horizontally */
+    align-items: center; /* Centers the container vertically */
+}
+
+.hh {
+    padding: 50px; /* Added padding for spacing */
+    color: white; /* Add contrast to text against the background */
+    max-width: 600px; /* Set a max width to keep content readable */
+    background: rgba(0, 0, 0, 0.6); /* Added dark transparent background for readability */
+    border-radius: 16px; /* Smooth corner rounding */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37); /* Soft box shadow */
+    text-align: center; /* Center the text */
+}
+
+.hh h1 {
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+}
+
+.hh p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px; /* Space between text and buttons */
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Spacing between buttons */
+}
+
+.but {
+    width: 120px; /* Increased width for better visibility */
+    height: 45px;
+    border-radius: 12px;
+    background-color: #007bff; /* Primary button color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.but.secondary {
+    background-color: #28a745; /* Secondary button color */
+}
+
+.but:hover {
+    transform: scale(1.05); /* Slight scale-up on hover */
+    background-color: #0056b3; /* Darken primary button on hover */
+}
+
+.but.secondary:hover {
+    background-color: #218838; /* Darken secondary button on hover */
+}

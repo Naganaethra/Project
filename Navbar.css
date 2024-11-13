@@ -1,0 +1,247 @@
+/*.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.search-bar {
+    padding: 5px;
+    width: 200px;
+}*/
+/* Navbar Container */
+/* Navbar Container */
+/* Navbar styling */
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    position: relative;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+  
+  .nav-links a:hover {
+    background-color: #555;
+  }
+  
+  .settings-section,
+  .profile-section,
+  .reports-section,
+  .orders-section {
+    position: relative;
+  }
+  
+  /* Dropdowns for Settings, Profile, Report, and Order */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+    color: white;
+    position: relative;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+  }
+  
+  .settings-section,
+  .profile-section,
+  .reports-section,
+  .orders-section {
+    position: relative;
+  }
+  
+  .settings-dropdown,
+  .profile-dropdown,
+  .report-dropdown,
+  .order-dropdown {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background: #2e3a5e;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    z-index: 1000;
+    animation: dropdown-slide 0.3s ease-in-out;
+  }
+  
+  /* Animation for Dropdown */
+  @keyframes dropdown-slide {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Order Form */
+  .order-dropdown {
+    width: 300px;
+  }
+  
+  .order-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .order-form label {
+    margin-top: 10px;
+  }
+  
+  .order-form input,
+  .order-form textarea {
+    padding: 8px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-form button {
+    padding: 10px;
+    background-color: #ff5c5c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .order-form button:hover {
+    background-color: #ff7f7f;
+    transform: scale(1.05);
+  }
+  
+  /* Report Form */
+  .report-dropdown {
+    width: 300px;
+  }
+  
+  .report-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .report-form label {
+    margin-top: 10px;
+  }
+  
+  .report-form input,
+  .report-form textarea {
+    padding: 8px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .report-form button {
+    padding: 10px;
+    background-color: #ff5c5c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .report-form button:hover {
+    background-color: #ff7f7f;
+    transform: scale(1.05);
+  }
+  
+  /* Profile Box */
+  .profile-box {
+    background: linear-gradient(145deg, #364670, #2e3a5e);
+    border-radius: 12px;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    color: #ddd;
+  }
+  
+  /* Settings Box */
+  .settings-box {
+    background: linear-gradient(145deg, #364670, #2e3a5e);
+    border-radius: 12px;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.3s;
+  }
+  
+  .settings-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    padding: 5px;
+    width: 200px;
+    border-radius: 
+  }
